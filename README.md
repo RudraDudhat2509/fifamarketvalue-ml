@@ -32,3 +32,5 @@ fifa-feature-engineering/
 ├── outputs/                 # Cleaned/transformed datasets
 ├── requirements.txt
 └── README.md
+##NOTE: 
+`Release clause_EUR` was found to overwhelmingly dominate the model's predictions. Since it likely overlaps heavily with or is derived from the target (`Value_EUR`), it was excluded from the final feature set to reduce leakage and better evaluate the importance of other engineered features.
